@@ -12,10 +12,10 @@ var/
 .vscode/
 .idea/
 
-
 ##### Files #####
 ignore.*
 *.ignore.*
+TimeTracker.spec
 
 # Environment variables and secret keys
 .env

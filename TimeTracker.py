@@ -1,5 +1,6 @@
 import re
 import os
+import signal
 from datetime import datetime, timedelta
 from tabulate import tabulate
 
@@ -107,9 +108,16 @@ class TimeTracker:
 
         self.display_results()
 
+
+def handle_keyboard_interrupt(signal, frame):
+    tracker.display_results()
+    sys.exit(0)
+
+
 if __name__ == "__main__":
     tracker = TimeTracker()
+    signal.signal(signal.SIGINT, handle_keyboard_interrupt)
     try:
         tracker.run()
     except KeyboardInterrupt:
-        tracker.display_results()
+        handle_keyboard_interrupt(None, None)
