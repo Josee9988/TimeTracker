@@ -4,10 +4,6 @@
 
 <div align="center">
   <!-- Change your logo -->
-  <a href="https://github.com/Josee9988/TimeTracker">
-    <img width="100%" src="https://i.imgur.com/SVvgxJF.png" alt="@Josee9988/TimeTracker's logo">
-  </a>
-  <br>
   <a href="https://github.com/Josee9988/TimeTracker/issues">
     <img src="https://img.shields.io/github/issues/Josee9988/TimeTracker?color=0088ff&style=for-the-badge&logo=github" alt="Josee9988/TimeTracker's issues"/>
   </a>
@@ -20,37 +16,61 @@
 
 ## 🤔 **About the project**
 
-* <!-- ... [WHY DID YOU CREATED THIS PROJECT?, MOTIVATION, PURPOSE, DESCRIPTION, OBJECTIVES, etc] -->
+* A time tracker tool to track several periods of time and compute the total hours.
 
 ---
 
 ## ⚡ **Installation**
 
-* <!-- ... [SHOW HOW YOUR PROJECT IS INSTALLED] -->
+1. Clone the repository and enter the directory:
+2. Make the script executable from anywhere:
+
+  ```bash
+    sudo bash MAKE_SCRIPT_GLOBAL.sh
+  ```
+
+3. Run the script from anywhere in your system:
+
+  ```bash
+    TimeTracker
+  ```
 
 ---
 
 ## 🚀 **Usage**
 
-* <!-- ... [SHOW HOW YOUR PROJECT IS USED] -->
+* Run the script and start specifying the start and end times of your periods of time.
+* To show the final time spent you can simply enter a blank space or send a signal with ^C
 
 ---
 
 ## 🌲 **Project tree**
 
-<!-- ... [SHOW YOUR PROJECT TREE HERE IF USEFUL] -->
+```bash
+.
+├── CHANGELOG.md
+├── MAKE_SCRIPT_GLOBAL.sh
+├── README.md
+├── TimeTracker
+└── TimeTracker.py
+
+0 directories, 5 files
+```
 
 ---
 
 ## 📝 **Additional notes**
 
-* <!-- ... [ADD ADDITIONAL NOTES] -->
+* The hours can be specified as:
+  * hh.mm
+  * h (if hour is between 1 and 9 (am))
+  * h.mm (if hour is between 1 and 9 (am))
 
 ---
 
 ## 📸 **Screenshots**
 
-<!-- ... [SOME DESCRIPTIVE IMAGES] -->
+<img src="https://i.imgur.com/A2VqGSm.png">
 
 ---
 
@@ -80,7 +100,7 @@ TimeTracker was generated from *[Josee9988/project-template](https://github.com/
 
 ## 🕵️ Extra recommendations
 
-* <!-- If you recommend installing anything special, or if you recommend using X thing for the good use of your project...-->
+* You can use the program without making the script global by using `python3 TimeTracker.py`
 
 ---
 
@@ -98,8 +118,6 @@ Enjoy! 😃
 ---
 
 ## ⚖️📝 **License and Changelog**
-
-See the license in the '**[LICENSE](LICENSE)**' file.
 
 Watch the changes in the '**[CHANGELOG.md](CHANGELOG.md)**' file.
 
